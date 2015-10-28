@@ -672,6 +672,28 @@
         }
         this.$container.removeData('backstretch');
       }
+      
+    /**
+     * Sets the alignment (centeredX/Y, alignX/Y) for the next image.
+     * Invalid values are silently ignored.
+     * @param {String} gravity (NorthWest, North, NorthEast, West, Center, East, SouthWest, South, SouthEast)
+     * @returns {Backstretch}
+     */
+    , gravity: function (gravity) {
+        var gravityOptions = {
+            NorthWest:  { alignX: 'left', alignY: 'top', centeredX: false, centeredY: false },
+            North:      { alignX: 'center', alignY: 'top', centeredX: true, centeredY: false },
+            NorthEast:  { alignX: 'right', alignY: 'top', centeredX: false, centeredY: false },
+            West:       { alignX: 'left', alignY: 'center', centeredX: false, centeredY: true },
+            Center:     { alignX: 'center', alignY: 'center', centeredX: true, centeredY: true },
+            East:       { alignX: 'right', alignY: 'center', centeredX: false, centeredY: true },
+            SouthWest:  { alignX: 'left', alignY: 'bottom', centeredX: false, centeredY: false },
+            South:      { alignX: 'center', alignY: 'bottom', centeredX: true, centeredY: false },
+            SouthEast:  { alignX: 'right', alignY: 'bottom', centeredX: false, centeredY: false }
+        };
+        this.options = $.extend({}, this.options, gravityOptions[gravity] || {});
+        return this;
+    }
   };
 
   /* SUPPORTS FIXED POSITION?

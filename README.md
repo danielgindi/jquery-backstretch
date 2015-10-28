@@ -111,6 +111,7 @@ $('.foo').backstretch("next");
 | `.backstretch("resume")` | Resume a paused slideshow. |
 | `.backstretch("destroy", preserveBackground)` | Destroy the Backstretch instance. Optionally, you can pass in a Boolean parameter, preserveBackground, to determine whether or not you'd like to keep the current image stretched as the background image. |
 | `.backstretch("resize")` | This method is called automatically when the container (window or block-level element) is resized, however you can always call this manually if needed. |
+| `.backstretch("gravity", g)` | Set the alignment (NorthWest, North, NorthEast, West, Center, East, SouthWest, South, SouthEast) for the next image. |
 
 ## Public Variables
 
