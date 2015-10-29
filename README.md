@@ -235,10 +235,16 @@ $(window).on("backstretch.after", function (e, instance, index) {
 
 ## Changelog
 
+### Version 2.1.0
+
+* New `resolutionRefreshRate` option
+* New `resolutionRefreshRate` option
+* Minor bugfix: If there was no `fade` duration, the new image was still being removed asynchronously. Possibly causing a glitch if custom CSS is used.
+
 ### Version 2.0.9
 
 * New `alt` image property
-* New `bypassCss` options
+* New `bypassCss` option
 
 ### Version 2.0.8
 
