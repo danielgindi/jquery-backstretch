@@ -592,7 +592,7 @@
             that.$img = $('<img />');
 
             if (!this.options.bypassCss) {
-                that.$img.css(styles.img)
+                that.$img.css(styles.img);
             }
 
             that.$img.bind('load', function (e) {
