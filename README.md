@@ -1,4 +1,4 @@
-# Backstretch
+# Backstretch - [Main repo](https://github.com/jquery-backstretch/jquery-backstretch) is back from the dead, activity moved back there.
 
 Backstretch is a simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element. The image will stretch to fit the page/element, and will automatically resize as the window/element size changes.
 
